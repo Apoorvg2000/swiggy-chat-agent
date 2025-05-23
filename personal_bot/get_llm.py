@@ -11,7 +11,6 @@ httpx_logger.setLevel(logging.ERROR)
 load_dotenv("../personal_bot/.env")
 
 groq_api_key = os.getenv("GROQ_API_KEY")
-print("yoyoyoyoy: ",groq_api_key)
 
 def get_llm(model_name="llama3-70b-8192", temperature=0.5, stop_words=None, max_tokens=512):
     model = ChatGroq(
