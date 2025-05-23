@@ -1,0 +1,1234 @@
+{
+    "test_results": [
+        {
+            "id": "TC001",
+            "input": "Book a table for 4 people at an Italian restaurant in Bandra tomorrow at 7 PM, budget 5000 rupees",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "tomorrow",
+                    "time": "7 PM",
+                    "location": "Bandra",
+                    "budget": "5000 rupees",
+                    "cuisine": "Italian",
+                    "party_size": "4",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Are there any special requests or preferences for the table reservation?"
+                ]
+            }
+        },
+        {
+            "id": "TC002",
+            "input": "Plan a 5-day trip to Goa from Mumbai for 3 people next month, prefer flights and budget around 50000 rupees, need beach view hotel",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "location_from": "Mumbai",
+                    "location_to": "Goa",
+                    "start_date": "next month",
+                    "end_date": "Not Specified",
+                    "mode": "flights",
+                    "members": "3",
+                    "budget": "50000 rupees",
+                    "special_requests": [
+                        "beach view hotel"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Could you specify the exact start and end dates for the 5-day trip?",
+                    "Do you have any specific flight preferences, such as departure time or airline?",
+                    "Are there any other special requests or preferences for the trip, besides the beach view hotel?"
+                ]
+            }
+        },
+        {
+            "id": "TC003",
+            "input": "Need a luxury cab for 2 people from Mumbai Airport to Taj Hotel tomorrow at 11 PM, with child seat",
+            "output": {
+                "intent_category": "cab_booking",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "pickup_location": "Mumbai Airport",
+                    "drop_off_location": "Taj Hotel",
+                    "members": "2",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "luxury cab",
+                        "child seat"
+                    ],
+                    "time": "11 PM",
+                    "date": "tomorrow"
+                },
+                "follow_up_questions": [
+                    "Could you please provide more details about your pickup location? Which terminal at Mumbai Airport?",
+                    "What is the budget for the luxury cab?",
+                    "How many children will be requiring the child seat?"
+                ]
+            }
+        },
+        {
+            "id": "TC004",
+            "input": "Send a birthday gift to my mom in Delhi, budget 10000 rupees, prefer flowers and chocolates, need delivery on 15th March",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "recipient": "mom",
+                    "occasion": "birthday",
+                    "budget": "10000 rupees",
+                    "special_requests": [
+                        "flowers",
+                        "chocolates",
+                        "delivery on 15th March"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Could you please provide your mom's exact address in Delhi for delivery?",
+                    "Would you like to add any other items to the gift along with flowers and chocolates?"
+                ]
+            }
+        },
+        {
+            "id": "TC005",
+            "input": "I want to go somewhere nice",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.75,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Not Specified",
+                    "start_date": "Not Specified",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Where are you travelling from?",
+                    "Where would you like to go?",
+                    "When are you planning to travel?",
+                    "How many people will be travelling?",
+                    "What mode of transport would you prefer (flight, train, etc.)?",
+                    "Do you have a budget in mind for the trip?",
+                    "Are you looking for any specific type of destination or experience?"
+                ]
+            }
+        },
+        {
+            "id": "TC006",
+            "input": "Book a table for dinner and then a cab to go there",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.85,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "Not Specified",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "1",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "What date would you like to book the dinner for?",
+                    "What time would you like to have dinner?",
+                    "Where would you like to have dinner?",
+                    "What type of cuisine are you in the mood for?",
+                    "Do you have a specific budget in mind for dinner?",
+                    "After dinner, where would you like the cab to take you?",
+                    "Do you have a budget in mind for the cab ride?"
+                ]
+            }
+        },
+        {
+            "id": "TC007",
+            "input": "Find a vegan restaurant in South Mumbai, budget 3000 rupees, need gluten-free options",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "South Mumbai",
+                    "budget": "3000 rupees",
+                    "cuisine": "vegan",
+                    "party_size": "Not Specified",
+                    "special_requests": [
+                        "gluten-free options"
+                    ]
+                },
+                "follow_up_questions": [
+                    "How many people will be dining?",
+                    "Are you looking for a specific time or date to dine at the vegan restaurant?",
+                    "Do you have any other special requests or preferences besides gluten-free options?"
+                ]
+            }
+        },
+        {
+            "id": "TC008",
+            "input": "Plan a trip to Paris from Delhi for 2 people in December, prefer business class flights, need hotel near Eiffel Tower",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "location_from": "Delhi",
+                    "location_to": "Paris",
+                    "start_date": "December",
+                    "end_date": "Not Specified",
+                    "mode": "business class flights",
+                    "members": "2",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "hotel near Eiffel Tower"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Could you please specify the exact start and end dates for the trip in December?",
+                    "Do you have a budget in mind for the trip?",
+                    "Are there any other special requests or preferences for the trip besides the hotel near the Eiffel Tower?"
+                ]
+            }
+        },
+        {
+            "id": "TC009",
+            "input": "Book a cab for office pickup for 5 people from Andheri to BKC, need it daily for next week",
+            "output": {
+                "intent_category": "cab_booking",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "pickup_location": "Andheri",
+                    "drop_off_location": "BKC",
+                    "members": "5",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "daily for next week"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Could you please specify the exact pickup location in Andheri?",
+                    "What is your budget for the daily cab bookings?",
+                    "Do you have any preferences or special requests for the cab?"
+                ]
+            }
+        },
+        {
+            "id": "TC010",
+            "input": "Send Diwali gifts to 50 employees in different cities, budget 2000 per person, prefer premium gift hampers",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "recipient": "50 employees",
+                    "occasion": "Diwali",
+                    "budget": "2000",
+                    "special_requests": [
+                        "premium gift hampers"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Do you have any specific preferences for the premium gift hampers, such as the types of items to be included?"
+                ]
+            }
+        },
+        {
+            "id": "TC011",
+            "input": "Need a table for 6 people tonight at 8 PM, any good restaurant in Powai",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.94,
+                "key_entities": {
+                    "date": "tonight",
+                    "time": "8 PM",
+                    "location": "Powai",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "6",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "What kind of cuisine are you in the mood for?",
+                    "Do you have a specific budget in mind for the dinner?"
+                ]
+            }
+        },
+        {
+            "id": "TC012",
+            "input": "Plan a romantic honeymoon trip to Maldives for 2 people in May, need overwater villa, all-inclusive package",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Maldives",
+                    "start_date": "May",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "2",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "overwater villa",
+                        "all-inclusive package"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Where will you be travelling from?",
+                    "Can you specify the exact start and end dates for the trip in May?",
+                    "How will you be travelling to Maldives?",
+                    "Do you have a specific budget in mind for the trip?"
+                ]
+            }
+        },
+        {
+            "id": "TC013",
+            "input": "Book a cab from home to airport tomorrow at 4 AM, have 3 large suitcases",
+            "output": {
+                "intent_category": "cab_booking",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "pickup_location": "home",
+                    "drop_off_location": "airport",
+                    "members": "2",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "3 large suitcases",
+                        "romantic honeymoon trip to Maldives",
+                        "4 AM tomorrow"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Could you please specify your exact pick up location, i.e., your home address?",
+                    "Could you please provide more details about your drop off location? Which airport are you travelling to?",
+                    "What is the budget for the cab?",
+                    "Do you have any other preferences or special requests for the cab?"
+                ]
+            }
+        },
+        {
+            "id": "TC014",
+            "input": "Send an anniversary gift to my wife at her office, surprise delivery with flowers and cake, budget 15000",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "recipient": "wife",
+                    "occasion": "anniversary",
+                    "budget": "15000",
+                    "special_requests": [
+                        "surprise delivery",
+                        "flowers",
+                        "cake",
+                        "delivery at office"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Could you please provide your wife's office address for delivery?"
+                ]
+            }
+        },
+        {
+            "id": "TC015",
+            "input": "Book a table for 15 people for a birthday party, need private dining area, prefer multi-cuisine, budget 50000",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "Not Specified",
+                    "budget": "50000",
+                    "cuisine": "multi-cuisine",
+                    "party_size": "15",
+                    "special_requests": [
+                        "private dining area",
+                        "birthday party"
+                    ]
+                },
+                "follow_up_questions": [
+                    "What date would you like to book the table for?",
+                    "What time would you like to book the table for?",
+                    "Where would you prefer to dine? Would you prefer a particular restaurant or location?",
+                    "Are there any other special requests or preferences for the birthday party?"
+                ]
+            }
+        },
+        {
+            "id": "TC016",
+            "input": "Need a cab immediately to the hospital, it's urgent",
+            "output": {
+                "intent_category": "cab_booking",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "pickup_location": "current location",
+                    "drop_off_location": "hospital",
+                    "members": "1",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "urgent"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Could you please specify your current location for the pickup?",
+                    "Could you please provide more details about your drop off location? Which hospital are you travelling to?",
+                    "How many people will be travelling with you?",
+                    "Do you have a budget in mind for the cab?"
+                ]
+            }
+        },
+        {
+            "id": "TC017",
+            "input": "Find a restaurant that can accommodate vegan, gluten-free, and nut-free requirements for 4 people",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "Not Specified",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "4",
+                    "special_requests": [
+                        "vegan",
+                        "gluten-free",
+                        "nut-free"
+                    ]
+                },
+                "follow_up_questions": [
+                    "What date would you like to dine?",
+                    "What time would you prefer to make the reservation for?",
+                    "Where would you like to find a restaurant?",
+                    "Do you have a specific cuisine in mind or would you like recommendations?",
+                    "What is your budget per person for the meal?"
+                ]
+            }
+        },
+        {
+            "id": "TC018",
+            "input": "Plan a trip from Mumbai to Europe, want to visit Paris, Rome, and Amsterdam in that order, prefer trains between cities, need hotels in city center",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "location_from": "Mumbai",
+                    "location_to": "Europe",
+                    "start_date": "Not Specified",
+                    "end_date": "Not Specified",
+                    "mode": "trains",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "hotels in city center",
+                        "visit Paris, Rome, and Amsterdam in that order"
+                    ]
+                },
+                "follow_up_questions": [
+                    "When would you like to start and end the trip?",
+                    "How many people will be travelling?",
+                    "Do you have a budget in mind for the entire trip?",
+                    "Are there any other special requests or preferences for the trip?"
+                ]
+            }
+        },
+        {
+            "id": "TC019",
+            "input": "Need to organize a corporate dinner for 30 people, need a private room, prefer Indian cuisine, budget 100000, need AV equipment",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "Not Specified",
+                    "budget": "100000",
+                    "cuisine": "Indian",
+                    "party_size": "30",
+                    "special_requests": [
+                        "private room",
+                        "AV equipment"
+                    ]
+                },
+                "follow_up_questions": [
+                    "When would you like to organize the corporate dinner?",
+                    "What time would you prefer for the dinner?",
+                    "Could you please specify the location for the dinner? Would you like it to be at a specific restaurant or a particular area?",
+                    "Are there any other special requests or preferences for the dinner?"
+                ]
+            }
+        },
+        {
+            "id": "TC020",
+            "input": "Send personalized gifts to 100 customers, each gift should include their name and a custom message, budget 5000 per gift, need delivery within 3 days",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "recipient": "100 customers",
+                    "occasion": "Not Specified",
+                    "budget": "5000",
+                    "special_requests": [
+                        "include their name",
+                        "custom message",
+                        "delivery within 3 days"
+                    ]
+                },
+                "follow_up_questions": [
+                    "What is the occasion for sending these personalized gifts?",
+                    "Are there any specific gift preferences or ideas you have in mind for the customers?"
+                ]
+            }
+        },
+        {
+            "id": "TC021",
+            "input": "I want to go somewhere warm",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.79,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Not Specified",
+                    "start_date": "Not Specified",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Where are you travelling from?",
+                    "What kind of warm destination are you looking for (beach, city, etc.)?",
+                    "When are you planning to travel?",
+                    "How many people will be travelling?",
+                    "What is your preferred mode of travel (flight, train, etc.)?",
+                    "Do you have a budget in mind for the trip?",
+                    "Are there any specific activities or experiences you're looking for in your warm destination?"
+                ]
+            }
+        },
+        {
+            "id": "TC022",
+            "input": "Need to book a trip for 20 people to Goa this weekend, prefer a beach resort with activities",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Goa",
+                    "start_date": "this weekend",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "20",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "beach resort",
+                        "activities"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Where will you be travelling from?",
+                    "Can you specify the exact start and end dates for the trip?",
+                    "How would you like to travel to Goa (flight, train, etc.)?",
+                    "Do you have a budget in mind for the trip?",
+                    "Are there any specific activities you'd like to have at the beach resort?"
+                ]
+            }
+        },
+        {
+            "id": "TC023",
+            "input": "Book a restaurant for a proposal dinner, need private space, prefer rooftop, need music arrangement, budget 25000",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "Not Specified",
+                    "budget": "25000",
+                    "cuisine": "Not Specified",
+                    "party_size": "Not Specified",
+                    "special_requests": [
+                        "private space",
+                        "rooftop",
+                        "music arrangement"
+                    ]
+                },
+                "follow_up_questions": [
+                    "What date would you like to book the restaurant for?",
+                    "What time would you prefer for the dinner?",
+                    "Where would you like to have the dinner?",
+                    "How many people will be attending the proposal dinner?",
+                    "Do you have a preferred cuisine or type of food in mind?"
+                ]
+            }
+        },
+        {
+            "id": "TC024",
+            "input": "Need a cab for a day trip, want to visit 5 different places in the city, need a driver who knows the city well",
+            "output": {
+                "intent_category": "cab_booking",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "pickup_location": "Not Specified",
+                    "drop_off_location": "Not Specified",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "visit 5 different places in the city",
+                        "driver who knows the city well"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Where would you like to be picked up from?",
+                    "Could you please provide more details about your drop off location?",
+                    "How many people will be travelling?",
+                    "What is your estimated budget for the day trip?"
+                ]
+            }
+        },
+        {
+            "id": "TC025",
+            "input": "Send a gift to my friend in USA, need to include customs declaration, prefer express delivery",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "recipient": "friend",
+                    "occasion": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "customs declaration",
+                        "express delivery"
+                    ]
+                },
+                "follow_up_questions": [
+                    "What is the occasion for sending the gift to your friend?",
+                    "Could you please specify your budget for the gift?"
+                ]
+            }
+        },
+        {
+            "id": "TC026",
+            "input": "Book a table for 2 people on 32nd March at 7 PM",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.85,
+                "key_entities": {
+                    "date": "32nd March",
+                    "time": "7 PM",
+                    "location": "Not Specified",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "2",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "March only has 31 days, could you please specify the correct date?",
+                    "Where would you like to book the table?",
+                    "Do you have a preferred cuisine or type of food in mind?",
+                    "What is your budget for the dinner?"
+                ]
+            }
+        },
+        {
+            "id": "TC027",
+            "input": "Plan a trip to Europe for 2 people with a budget of 1000 rupees",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.79,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Europe",
+                    "start_date": "Not Specified",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "2",
+                    "budget": "1000 rupees",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Where will you be travelling from?",
+                    "Could you please specify the exact locations in Europe you'd like to visit?",
+                    "What are your preferred start and end dates for the trip?",
+                    "How do you plan to travel (flight, train, etc.)?",
+                    "Considering the budget of 1000 rupees for 2 people, would you like to explore options for a shorter trip or look into budget-friendly destinations within Europe?"
+                ]
+            }
+        },
+        {
+            "id": "TC028",
+            "input": "Book a table for 50 people at a small restaurant",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "a small restaurant",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "50",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Could you please specify the date you'd like to book the table for?",
+                    "What time would you like the table to be ready?",
+                    "Could you please provide more details about the restaurant? Is it a specific one or would you like recommendations?",
+                    "Do you have a specific cuisine in mind for the dinner?",
+                    "What is your budget per person or for the entire party?",
+                    "Are there any special requests for the booking, such as private room or specific seating arrangements?"
+                ]
+            }
+        },
+        {
+            "id": "TC029",
+            "input": "Book a cab to the mall",
+            "output": {
+                "intent_category": "cab_booking",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "pickup_location": "Not Specified",
+                    "drop_off_location": "mall",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "cab"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Where would you like to be picked up from?",
+                    "Could you please provide more details about your drop off location? Which mall are you heading to?",
+                    "How many people will be travelling?",
+                    "Do you have a budget in mind for the cab ride?"
+                ]
+            }
+        },
+        {
+            "id": "TC030",
+            "input": "Send a gift to my friend",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.94,
+                "key_entities": {
+                    "recipient": "friend",
+                    "occasion": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "What's the occasion for sending a gift to your friend?",
+                    "What's your budget for the gift?",
+                    "Do you have any special requests or preferences for the gift?"
+                ]
+            }
+        },
+        {
+            "id": "TC031",
+            "input": "Need a table for 4 people in 30 minutes",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "30 minutes",
+                    "location": "Not Specified",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "4",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "What is the preferred date for the table reservation?",
+                    "Could you please specify the location where you'd like to dine?",
+                    "Do you have a specific cuisine or type of food in mind?",
+                    "What is your estimated budget for the meal?"
+                ]
+            }
+        },
+        {
+            "id": "TC032",
+            "input": "Plan a trip to Japan for 1 day",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Japan",
+                    "start_date": "1 day",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "1",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Where will you be travelling from?",
+                    "Could you please clarify the start and end dates for the trip? '1 day' is a bit vague. Are you looking for a one-day itinerary within Japan or a trip that spans one day including travel to and from Japan?",
+                    "What mode of travel are you planning to use to get to Japan (flight, train, etc.)?",
+                    "Do you have a budget in mind for the trip?",
+                    "Do you have any special requests or preferences for the trip?"
+                ]
+            }
+        },
+        {
+            "id": "TC033",
+            "input": "Need cabs for 10 people going to different places",
+            "output": {
+                "intent_category": "cab_booking",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "pickup_location": "Not Specified",
+                    "drop_off_location": "Not Specified",
+                    "members": "10",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Could you please specify the exact pick up location?",
+                    "What are the different drop off locations for the 10 people?",
+                    "What is the budget for the cabs?",
+                    "Do you have any specific time or schedule in mind for the trip?",
+                    "Are there any special requests or preferences for the cab service?"
+                ]
+            }
+        },
+        {
+            "id": "TC034",
+            "input": "Send gifts to all my employees",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "recipient": "all my employees",
+                    "occasion": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "What is the occasion for sending gifts to your employees?",
+                    "Could you please specify your budget for the gifts?",
+                    "Do you have any special requests or preferences for the gifts?"
+                ]
+            }
+        },
+        {
+            "id": "TC035",
+            "input": "Book a table for 100 people for a wedding reception",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "Not Specified",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "100",
+                    "special_requests": [
+                        "wedding reception"
+                    ]
+                },
+                "follow_up_questions": [
+                    "When would you like to book the table for?",
+                    "What time would you prefer for the wedding reception?",
+                    "Where would you like to book the table?",
+                    "Do you have a specific cuisine in mind for the wedding reception?",
+                    "What is your budget for the event?",
+                    "Do you have any other special requests for the wedding reception?"
+                ]
+            }
+        },
+        {
+            "id": "TC036",
+            "input": "Book a table for 2 people at 25:00",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "1:00 AM",
+                    "location": "Not Specified",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "2",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Which date would you like to book the table for?",
+                    "Where would you like to dine?",
+                    "Do you have a preferred cuisine or type of food in mind?",
+                    "Do you have a specific budget in mind for the dinner?"
+                ]
+            }
+        },
+        {
+            "id": "TC037",
+            "input": "Book a train from Mumbai to New York",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "location_from": "Mumbai",
+                    "location_to": "New York",
+                    "start_date": "Not Specified",
+                    "end_date": "Not Specified",
+                    "mode": "train",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "There are no direct trains from Mumbai to New York. Would you like to explore flight options or a combination of trains and flights?",
+                    "When are you planning to travel?",
+                    "How many people will be travelling?",
+                    "Do you have a budget in mind for the journey?"
+                ]
+            }
+        },
+        {
+            "id": "TC038",
+            "input": "Book a cab for yesterday",
+            "output": {
+                "intent_category": "cab_booking",
+                "confidence_score": 0.78,
+                "key_entities": {
+                    "pickup_location": "Not Specified",
+                    "drop_off_location": "Not Specified",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Where would you like to be picked up from?",
+                    "Where are you heading to?",
+                    "How many people will be travelling?",
+                    "Do you have a specific budget in mind for the cab?",
+                    "Do you have any special requests for the trip?"
+                ]
+            }
+        },
+        {
+            "id": "TC039",
+            "input": "Send a gift to my mom for her birthday last month",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "recipient": "mom",
+                    "occasion": "birthday",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Could you specify a budget for the gift?",
+                    "Do you have any special requests or preferences for the gift?",
+                    "Since the birthday was last month, would you like to send a belated birthday gift or is there another occasion you'd like to celebrate?"
+                ]
+            }
+        },
+        {
+            "id": "TC040",
+            "input": "Need a table for 20 people in 15 minutes",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "15 minutes",
+                    "location": "Not Specified",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "20",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "What is your preferred date for the table reservation?",
+                    "Where would you like to book the table?",
+                    "What type of cuisine are you interested in?",
+                    "Do you have a budget in mind for the reservation?"
+                ]
+            }
+        },
+        {
+            "id": "TC041",
+            "input": "Book a trip from 1st January to 30th December",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Not Specified",
+                    "start_date": "1st January",
+                    "end_date": "30th December",
+                    "mode": "Not Specified",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Where will you be travelling from?",
+                    "Where will you be travelling to?",
+                    "How many people will be travelling?",
+                    "What mode of transportation would you prefer (flight, train, etc.)?",
+                    "Do you have a budget in mind for the trip?"
+                ]
+            }
+        },
+        {
+            "id": "TC042",
+            "input": "Book a cab to the middle of the ocean",
+            "output": {
+                "intent_category": "other",
+                "confidence_score": 0.79,
+                "web_search_response": [
+                    {
+                        "snippet": "Port Blair Cabs/Taxi Booking Contact Number - 7063934032 Book your Port Blair Cab/Taxi with Andaman Ocean Cabs by calling 7063934032. You can contact us between 09:30 to 10:00 Hrs or visit our office at Gurudwara Ln, Aberdeen Bazar, Port Blair. Experience hassle-free transportation in the beautiful Andaman Islands.",
+                        "title": "Book Port Blair Cab @250/-",
+                        "link": "https://www.andamanocean.in/port-blair-cab-price-list/"
+                    },
+                    {
+                        "snippet": "Cabs are sometimes booked for a single day and sometimes they are booked for the entire trip to facilitate sightseeing without investing much time on transportation. They are a convenient mode of transport to explore the natural vistas. Booking a cab in advance ensures a hassle-free vacation and the sightseeing can be managed seamlessly.",
+                        "title": "Taxi Service in Andaman",
+                        "link": "https://www.andamantourism.org/taxi-service-in-andaman/"
+                    },
+                    {
+                        "snippet": "3. Reliable One-Way Taxi Service Near You With Oray Taxi's intuitive booking platform, get instant booking confirmations with just a few clicks. Simply select \"one-way travel,\" add your pickup and drop-off details, and let our team handle the rest. Our professionally trained drivers ensure punctual and courteous service. 4. Safety-First ...",
+                        "title": "Oray Taxi One-Way Drop Taxi Service: Best One-Way Cab Booking",
+                        "link": "https://oraytaxi.com/one-way-taxi-service"
+                    },
+                    {
+                        "snippet": "Online cabs booking offers unmatched convenience, allowing you to book a ride anytime, anywhere, with instant confirmation and transparent pricing. You can choose from a variety of vehicles to suit your needs and enjoy secure, cashless payment options. Features like real-time tracking and 24/7 availability ensure reliability and safety, making ...",
+                        "title": "Frequently Asked Questions (FAQ's) - Wise Travel India Pvt. Ltd.",
+                        "link": "https://www.wticabs.com/outstation-cabs"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "TC043",
+            "input": "Send a gift to the North Pole",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.85,
+                "key_entities": {
+                    "recipient": "the North Pole",
+                    "occasion": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Who is the gift intended for at the North Pole?",
+                    "What is the occasion for sending the gift?",
+                    "What is your budget for the gift?",
+                    "Do you have any special requests or preferences for the gift?"
+                ]
+            }
+        },
+        {
+            "id": "TC044",
+            "input": "Plan a trip for 500 people to Dubai",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Dubai",
+                    "start_date": "Not Specified",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "500",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Where will the 500 people be travelling from?",
+                    "Can you specify the exact start and end dates for the trip to Dubai?",
+                    "Do you have a preferred mode of travel (flight, train, etc.)?",
+                    "Do you have a specific budget in mind for the trip?",
+                    "Are there any special requests or preferences for the trip?"
+                ]
+            }
+        },
+        {
+            "id": "TC045",
+            "input": "Book a table for breakfast at 10 PM",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.82,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "10 AM",
+                    "location": "Dubai",
+                    "budget": "Not Specified",
+                    "cuisine": "breakfast",
+                    "party_size": "500",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Could you please specify the date for the breakfast?",
+                    "What is your estimated budget for the event?",
+                    "Do you have any special requests or preferences for the breakfast?"
+                ]
+            }
+        },
+        {
+            "id": "TC046",
+            "input": "Book a spaceship to Mars",
+            "output": {
+                "intent_category": "other",
+                "confidence_score": 0.85,
+                "web_search_response": [
+                    {
+                        "snippet": "Lose yourself in the best space books out there as we round up the pick of the out-of-this-world reading material across an array of categories. ... Sarah Stewart Johnson's book takes us to Mars ...",
+                        "title": "Best space books to read in 2025",
+                        "link": "https://www.space.com/28973-best-space-books.html"
+                    },
+                    {
+                        "snippet": "Astronauts on a roundtrip mission to Mars will not have the resupply missions to deliver fresh food. NASA is researching food systems to ensure quality, variety, and nutritional values for these long missions. Plant growth on the International Space Station is helping to inform in-space crop management as well.",
+                        "title": "Humans to Mars - NASA",
+                        "link": "https://www.nasa.gov/humans-in-space/humans-to-mars/"
+                    },
+                    {
+                        "snippet": "By Carol Matz. Author Carol Matz. Enjoy your trip to the cosmos! A Federation Festivals 2016-2020 selection. Subtitle Sheet. Series Signature (Alfred). Language English. Format Paperback.",
+                        "title": "Spaceship to Mars: Sheet by Carol Matz (English) Paperback Book",
+                        "link": "https://www.ebay.com/itm/135415119026"
+                    },
+                    {
+                        "snippet": "If you like books based primarily on world building, then you will enjoy this book. If you depend more on a story-line with an arc and characters that are well-developed, this story may disappoint. Martin Gibson is a writer and he has been selected to fly on a spaceship to Mars and send back news to Earth.",
+                        "title": "Sands of Mars, The by Arthur C. Clarke - Goodreads",
+                        "link": "https://www.goodreads.com/book/show/22580441"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "TC047",
+            "input": "Book a cab for 100 hours",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.78,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Not Specified",
+                    "start_date": "Not Specified",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": [
+                        "100 hours"
+                    ]
+                },
+                "follow_up_questions": [
+                    "Where will you be departing from?",
+                    "What are the start and end dates for your trip?",
+                    "How many people will be travelling in the cab?",
+                    "Do you have a specific budget in mind for the journey?",
+                    "Could you please clarify what you mean by '100 hours'? Is that the duration of the trip or some other requirement?"
+                ]
+            }
+        },
+        {
+            "id": "TC048",
+            "input": "Send a gift worth 1 rupee to my friend",
+            "output": {
+                "intent_category": "gifting",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "recipient": "friend",
+                    "occasion": "Not Specified",
+                    "budget": "1 rupee",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "What is the occasion for sending the gift to your friend?",
+                    "Could you please provide more details about your friend, such as their name or location, to facilitate the gift delivery?"
+                ]
+            }
+        },
+        {
+            "id": "TC049",
+            "input": "Book a table for 1000 people",
+            "output": {
+                "intent_category": "dining",
+                "confidence_score": 0.96,
+                "key_entities": {
+                    "date": "Not Specified",
+                    "time": "Not Specified",
+                    "location": "Not Specified",
+                    "budget": "Not Specified",
+                    "cuisine": "Not Specified",
+                    "party_size": "1000",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "What date would you like to book the table for?",
+                    "What time would you like to book the table for?",
+                    "Where would you like to book the table?",
+                    "Do you have a preferred cuisine or type of food in mind?",
+                    "What is your budget for the event?",
+                    "Do you have any special requests for the reservation?"
+                ]
+            }
+        },
+        {
+            "id": "TC050",
+            "input": "Book a trip to Neverland",
+            "output": {
+                "intent_category": "travel",
+                "confidence_score": 0.92,
+                "key_entities": {
+                    "location_from": "Not Specified",
+                    "location_to": "Neverland",
+                    "start_date": "Not Specified",
+                    "end_date": "Not Specified",
+                    "mode": "Not Specified",
+                    "members": "Not Specified",
+                    "budget": "Not Specified",
+                    "special_requests": "Not Specified"
+                },
+                "follow_up_questions": [
+                    "Where will you be travelling from?",
+                    "When would you like to start and end the trip?",
+                    "How many people will be travelling?",
+                    "Do you have a preferred mode of travel (flight, train, etc.)?",
+                    "Do you have a specific budget in mind for the trip?",
+                    "Do you have any special requests or preferences for the trip?"
+                ]
+            }
+        },
+        {
+            "id": "TC051",
+            "input": "What's the weather like today?",
+            "output": {
+                "intent_category": "other",
+                "confidence_score": 0.92,
+                "web_search_response": [
+                    {
+                        "snippet": "Today's weather forecast for Neverland Airport by the hour.",
+                        "title": "Yr - Neverland Airport - Hourly weather forecast",
+                        "link": "https://www.yr.no/en/forecast/hourly-table/2-8081407/United+States/New+York/Cattaraugus/Neverland+Airport?i=4"
+                    },
+                    {
+                        "snippet": "Netherlands - Detailed weather forecast for today. Comprehensive weather report for today for all locations.",
+                        "title": "Weather today - Netherlands",
+                        "link": "https://www.weather-atlas.com/en/netherlands"
+                    },
+                    {
+                        "snippet": "Neverland Airport, Cattaraugus County weather forecasts for today, weather radar, climate and historical trends",
+                        "title": "Neverland Airport weather forecast for today",
+                        "link": "https://justweather.org/United-States/New-York/Cattaraugus-County/Neverland-Airport/"
+                    },
+                    {
+                        "snippet": "Latest weather forecast for Netherlands for today's, hourly weather forecast, including today's temperatures in Netherlands, wind, rain and more.",
+                        "title": "Netherlands local weather (live): today, hourly weather",
+                        "link": "https://www.weather25.com/europe/netherlands?page=today"
+                    }
+                ]
+            }
+        }
+    ]
+}

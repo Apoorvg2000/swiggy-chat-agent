@@ -1,0 +1,259 @@
+{
+    "test_cases": [
+        {
+            "id": "TC001",
+            "input": "Book a table for 4 people at an Italian restaurant in Bandra tomorrow at 7 PM, budget 5000 rupees",
+            "intent": "dining"
+        },
+        {
+            "id": "TC002",
+            "input": "Plan a 5-day trip to Goa from Mumbai for 3 people next month, prefer flights and budget around 50000 rupees, need beach view hotel",
+            "intent": "travel"
+        },
+        {
+            "id": "TC003",
+            "input": "Need a luxury cab for 2 people from Mumbai Airport to Taj Hotel tomorrow at 11 PM, with child seat",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC004",
+            "input": "Send a birthday gift to my mom in Delhi, budget 10000 rupees, prefer flowers and chocolates, need delivery on 15th March",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC005",
+            "input": "I want to go somewhere nice",
+            "intent": "other"
+        },
+        {
+            "id": "TC006",
+            "input": "Book a table for dinner and then a cab to go there",
+            "intent": "dining"
+        },
+        {
+            "id": "TC007",
+            "input": "Find a vegan restaurant in South Mumbai, budget 3000 rupees, need gluten-free options",
+            "intent": "dining"
+        },
+        {
+            "id": "TC008",
+            "input": "Plan a trip to Paris from Delhi for 2 people in December, prefer business class flights, need hotel near Eiffel Tower",
+            "intent": "travel"
+        },
+        {
+            "id": "TC009",
+            "input": "Book a cab for office pickup for 5 people from Andheri to BKC, need it daily for next week",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC010",
+            "input": "Send Diwali gifts to 50 employees in different cities, budget 2000 per person, prefer premium gift hampers",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC011",
+            "input": "Need a table for 6 people tonight at 8 PM, any good restaurant in Powai",
+            "intent": "dining"
+        },
+        {
+            "id": "TC012",
+            "input": "Plan a romantic honeymoon trip to Maldives for 2 people in May, need overwater villa, all-inclusive package",
+            "intent": "travel"
+        },
+        {
+            "id": "TC013",
+            "input": "Book a cab from home to airport tomorrow at 4 AM, have 3 large suitcases",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC014",
+            "input": "Send an anniversary gift to my wife at her office, surprise delivery with flowers and cake, budget 15000",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC015",
+            "input": "Book a table for 15 people for a birthday party, need private dining area, prefer multi-cuisine, budget 50000",
+            "intent": "dining"
+        },
+        {
+            "id": "TC016",
+            "input": "Need a cab immediately to the hospital, it's urgent",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC017",
+            "input": "Find a restaurant that can accommodate vegan, gluten-free, and nut-free requirements for 4 people",
+            "intent": "dining"
+        },
+        {
+            "id": "TC018",
+            "input": "Plan a trip from Mumbai to Europe, want to visit Paris, Rome, and Amsterdam in that order, prefer trains between cities, need hotels in city center",
+            "intent": "travel"
+        },
+        {
+            "id": "TC019",
+            "input": "Need to organize a corporate dinner for 30 people, need a private room, prefer Indian cuisine, budget 100000, need AV equipment",
+            "intent": "dining"
+        },
+        {
+            "id": "TC020",
+            "input": "Send personalized gifts to 100 customers, each gift should include their name and a custom message, budget 5000 per gift, need delivery within 3 days",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC021",
+            "input": "I want to go somewhere warm",
+            "intent": "other"
+        },
+        {
+            "id": "TC022",
+            "input": "Need to book a trip for 20 people to Goa this weekend, prefer a beach resort with activities",
+            "intent": "travel"
+        },
+        {
+            "id": "TC023",
+            "input": "Book a restaurant for a proposal dinner, need private space, prefer rooftop, need music arrangement, budget 25000",
+            "intent": "dining"
+        },
+        {
+            "id": "TC024",
+            "input": "Need a cab for a day trip, want to visit 5 different places in the city, need a driver who knows the city well",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC025",
+            "input": "Send a gift to my friend in USA, need to include customs declaration, prefer express delivery",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC026",
+            "input": "Book a table for 2 people on 32nd March at 7 PM",
+            "intent": "dining"
+        },
+        {
+            "id": "TC027",
+            "input": "Plan a trip to Europe for 2 people with a budget of 1000 rupees",
+            "intent": "travel"
+        },
+        {
+            "id": "TC028",
+            "input": "Book a table for 50 people at a small restaurant",
+            "intent": "dining"
+        },
+        {
+            "id": "TC029",
+            "input": "Book a cab to the mall",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC030",
+            "input": "Send a gift to my friend",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC031",
+            "input": "Need a table for 4 people in 30 minutes",
+            "intent": "dining"
+        },
+        {
+            "id": "TC032",
+            "input": "Plan a trip to Japan for 1 day",
+            "intent": "travel"
+        },
+        {
+            "id": "TC033",
+            "input": "Need cabs for 10 people going to different places",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC034",
+            "input": "Send gifts to all my employees",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC035",
+            "input": "Book a table for 100 people for a wedding reception",
+            "intent": "dining"
+        },
+        {
+            "id": "TC036",
+            "input": "Book a table for 2 people at 25:00",
+            "intent": "dining"
+        },
+        {
+            "id": "TC037",
+            "input": "Book a train from Mumbai to New York",
+            "intent": "travel"
+        },
+        {
+            "id": "TC038",
+            "input": "Book a cab for yesterday",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC039",
+            "input": "Send a gift to my mom for her birthday last month",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC040",
+            "input": "Need a table for 20 people in 15 minutes",
+            "intent": "dining"
+        },
+        {
+            "id": "TC041",
+            "input": "Book a trip from 1st January to 30th December",
+            "intent": "travel"
+        },
+        {
+            "id": "TC042",
+            "input": "Book a cab to the middle of the ocean",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC043",
+            "input": "Send a gift to the North Pole",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC044",
+            "input": "Plan a trip for 500 people to Dubai",
+            "intent": "travel"
+        },
+        {
+            "id": "TC045",
+            "input": "Book a table for breakfast at 10 PM",
+            "intent": "dining"
+        },
+        {
+            "id": "TC046",
+            "input": "Book a spaceship to Mars",
+            "intent": "other"
+        },
+        {
+            "id": "TC047",
+            "input": "Book a cab for 100 hours",
+            "intent": "cab_booking"
+        },
+        {
+            "id": "TC048",
+            "input": "Send a gift worth 1 rupee to my friend",
+            "intent": "gifting"
+        },
+        {
+            "id": "TC049",
+            "input": "Book a table for 1000 people",
+            "intent": "dining"
+        },
+        {
+            "id": "TC050",
+            "input": "Book a trip to Neverland",
+            "intent": "travel"
+        },
+        {
+            "id": "TC051",
+            "input": "What's the weather like today?",
+            "intent": "other"
+        }
+    ]
+}
