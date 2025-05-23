@@ -1,6 +1,6 @@
 # Chat Agent System
 
-A sophisticated chat agent system capable of handling multiple intents including dining reservations, travel planning, cab bookings, and gift sending. The system uses advanced natural language processing to understand user queries and provide relevant responses.
+A sophisticated chat agent system capable of handling multiple intents including dining reservations, travel planning, cab bookings, and gift sending. The system uses advanced natural language processing to understand user queries and provide relevant responses. In this chat agent, I have used Groq with LangChain due to its ease of use and smooth integration with LangChain.
 
 ## Features
 
@@ -42,6 +42,11 @@ source myenv/bin/activate
 3. Install required dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+4. Add Groq API key in evironment file .env
+```bash
+GROQ_API_KEY=<your_groq_api_key>
 ```
 
 ## Running the Chat Agent
