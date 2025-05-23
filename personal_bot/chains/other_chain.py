@@ -1,3 +1,15 @@
+"""
+Web Search Chain
+
+This module implements a chain for handling general queries.
+It processes queries that don't fit into specific intents and extracts key phrases and words
+are then used to do a web search.
+
+Key functionalities:
+- Handles general knowledge queries
+- Extracts key phrases and words from the query
+"""
+
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 import sys

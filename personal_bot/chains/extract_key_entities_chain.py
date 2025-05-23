@@ -1,3 +1,16 @@
+"""
+Entity Extraction Chain
+
+This module implements a chain for extracting relevant entities from user queries.
+It identifies and extracts key information such as dates, times, locations, budgets,
+and special requirements based on the intent type.
+
+Key functionalities:
+- Extracts entities based on intent context
+- Handles different entity types for each intent
+- Manages missing or ambiguous entities
+"""
+
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 import sys

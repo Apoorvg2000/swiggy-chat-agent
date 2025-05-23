@@ -1,3 +1,16 @@
+"""
+LLM Configuration
+
+This module handles the configuration and initialization of the Language Model.
+It manages API keys and creates the LLM instance for use across the application.
+
+Key functionalities:
+- Loads and validates API keys
+- Configures LLM parameters
+- Creates and returns LLM instance
+- Manages API key security
+"""
+
 from langchain_groq import ChatGroq
 import os
 import httpx

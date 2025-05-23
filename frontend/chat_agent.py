@@ -241,7 +241,7 @@ class ChatAgent:
             return ai_response
         
         elif intent_category == "greetings":
-            if "how are you" or "how you" or "hello" or "hi" or "hey" in absolute_query.lower():
+            if "how are you" in absolute_query.lower() or "how you" in absolute_query.lower():
                 ai_response["response"] = "I'm good, thank you! How can I help you today?"
             else:
                 ai_response["response"] = "Hello! What can I help you with today?"

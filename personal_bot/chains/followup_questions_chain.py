@@ -1,3 +1,17 @@
+"""
+Follow-up Questions Chain
+
+This module implements a chain for generating contextual follow-up questions.
+It analyzes the current query and extracted entities to generate relevant
+follow-up questions that help gather missing or ambiguous information.
+
+Key functionalities:
+- Generates contextually relevant follow-up questions
+- Identifies missing or ambiguous information
+- Maintains conversation flow
+- Avoids redundant questions
+"""
+
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 import sys

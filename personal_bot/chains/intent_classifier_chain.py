@@ -1,3 +1,16 @@
+"""
+Intent Classification Chain
+
+This module implements a chain for classifying user queries into specific intents.
+It uses a language model to analyze user input and determine the appropriate intent category
+(dining, travel, cab booking, gifting, or other).
+
+Key functionalities:
+- Classifies user queries into predefined intent categories
+- Provides confidence scores for classifications
+- Handles ambiguous queries and edge cases
+"""
+
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 import sys

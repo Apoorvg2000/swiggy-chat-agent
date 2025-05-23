@@ -1,3 +1,16 @@
+"""
+Contextual Processing Chain
+
+This module implements a chain for processing user queries with context awareness.
+It enhances user queries by incorporating relevant context from previous interactions,
+making the chat agent's responses more coherent and contextually appropriate.
+
+Key functionalities:
+- Maintains conversation history
+- Enhances queries with contextual information
+- Handles context preservation and management
+"""
+
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 import sys

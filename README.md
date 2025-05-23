@@ -26,6 +26,8 @@ cd swiggy-chat-agent
 ```
 
 2. Create and activate a virtual environment:
+
+NOTE: This agent needs python version >=3.9 and <3.13
 ```bash
 # Create virtual environment
 python3 -m venv myenv
@@ -44,9 +46,13 @@ source myenv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Add Groq API key in evironment file .env
+4. Add Groq API key in evironment file .env in `personal_bot` directory:
 ```bash
 GROQ_API_KEY=<your_groq_api_key>
+```
+Note: You can use this api key for now to test the agent:
+```bash
+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
 ```
 
 ## Running the Chat Agent
@@ -138,7 +144,7 @@ The test suite includes 51 test cases covering various scenarios:
 
 ## Test Results Format
 
-The test results are saved in JSON format with the following structure:
+The test results are saved in JSON format in test_results directory with the following structure:
 
 ```json
 {
@@ -194,3 +200,9 @@ The chat agent's performance is evaluated based on:
 2. Entity Extraction Accuracy
 3. Response Relevance
 4. Error Handling Effectiveness
+
+
+## Personal Note
+
+I enjoyed working on this project. Thank you for giving me the opportunity. Also I would like to apologise for any dirty piece of code. I have tried to make it as modular as I could and added comments wherever necessary.
+
